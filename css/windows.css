@@ -1,0 +1,207 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#1793b3;
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:13px;
+    height:100%;
+    margin:0px;
+    padding:3px;
+    width:100%;
+    text-align: center;
+
+
+   
+}
+
+
+
+h1 {
+    position: absolute;
+    font-size:18px;
+    font-weight:normal;
+    margin-left:40px;
+    overflow:visible;
+    padding:0px;
+    text-align:;
+    color: white;
+
+}
+
+p {
+    color: white;
+     text-transform:lowercase;
+     text-transform: capitalize;
+}
+span{
+    color: #000;
+    font-weight: 500;
+
+}
+
+.subtext {
+    font-size: 14px;
+    margin-bottom:10px;
+    text-align: left;
+}
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:14px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+
+ #header{
+    margin-bottom: 15px;
+    height: 30px;
+    width: auto;
+  vertical-align: middle;
+    background-color: #fff;
+    text-transform: capitalize;
+ }
+ img{
+    margin: 5px;
+ }
+
+ table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+td, th {
+  border: 3px solid #dddddd;
+  text-align: left;
+  padding: 2px;
+}
+
+tr {
+  background-color:#F7F8F7;
+}
+th {
+ text-align: center;
+ font-weight: 800;
+ background-color: #F89C1F;
+}
+
+#myBtn {
+    height: 40px;
+    width: 40px;
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color:#F89C1F;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 100px;
+  opacity: 0.9;
+  filter: alpha(opacity=50);
+   font-weight: 550;
+}
+#exit{
+      height: 40px;
+    width: 40px;
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color:#2daece;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 100px;
+  opacity: 0.9;
+  filter: alpha(opacity=50);
+   font-weight: 550;
+      box-shadow: 0 8px 10px 0 rgba(0, 0.5, 0.5, 0.5), 0 9px 30px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+#exit:hover {
+  background-color:#FF7C00;
+  opacity: 5.5;
+}
+
+#navlist{
+    position: relative;
+    height: auto;
+    text-align: left;
+    color: #fff;
+     font-size: 12px; 
+}
+#navlist ol  {
+    width:100%; 
+    margin:-0px 0px 0px 0px; 
+    padding: 0px;
+} 
+
+
+
+a:link, a:visited {
+  background-color:#1793b3;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  font-weight: 550;
+  list-style: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a:hover, a:active {
+  background-color:white;
+  color: #F89C1F;
+}
+
+
