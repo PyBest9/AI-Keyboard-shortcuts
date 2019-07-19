@@ -33,7 +33,7 @@
         <title>AI Keyboard shortcuts</title>
        
     </head>
-    <body>
+    <body onload="showExitDialog()">
         <div class="app">
             <h1 style=" font-family: 'Teko', sans-serif;
 ">AI shortcuts</h1>
@@ -71,5 +71,23 @@ function onConfirmQuit(button){
    }
 }
         </script>
+        <script type="text/javascript">
+          function showExitDialog() {
+navigator.notification.confirm(
+    ("Do you want to Exit?"), // message
+    alertexit, // callback
+    'Exit the application?', // title
+    'YES,NO' // buttonName
+);
+}
+function alertexit(button){
+
+     if(button=="1" || button==1 && navigator.app) {
+         navigator.app.exitApp();
+     } else if(button=="1" || button==1 && navigator.device) {
+         navigator.device.exitApp();
+     }
+}
+      </script>
     </body>
 </html>
