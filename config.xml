@@ -9,7 +9,8 @@
     </author>
     <content src="index.html" />
    
-   
+    <plugin name="phonegap-admob" source="npm"/>
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
     <icon src="illustrator.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="www/res/icon/android/illustrator.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="www/res/icon/android/illustrator.png" />
